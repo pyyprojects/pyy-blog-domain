@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.93.1.198:3306/blog?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root123
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
+
+
+logging:
+  level:
+    root: warn # springBoot日志级别
+    com.pyy.pyyblogdomain: info
+  file: log/blog-production.log
+server:
+  port: 9001
+
+
+
+
+
